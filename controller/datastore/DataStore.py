@@ -22,13 +22,6 @@ class DataStore(object):
         filename, = data
         comment, = data.values()
 
-        #filename = data[key]
-        #print(filename)
-        #print(type(filename))
-        #comment = data[filename]
-        #print(comment)
-        #print(type(comment))
-
         try:
             with open(filename, 'wb') as file:
                 for single_comment in comment:
